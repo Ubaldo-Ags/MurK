@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MURKDataSet" targetNamespace="http://tempuri.org/MURKDataSet.xsd" xmlns:mstns="http://tempuri.org/MURKDataSet.xsd" xmlns="http://tempuri.org/MURKDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MURKConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MURKConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MURK_Rentas.Properties.Settings.GlobalReference.Default.MURKConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_ARTICULOSTableAdapter" GeneratorDataComponentClassName="V_ARTICULOSTableAdapter" Name="V_ARTICULOS" UserDataComponentName="V_ARTICULOSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MURKConnectionString1 (Settings)" DbObjectName="MURK.dbo.V_ARTICULOS" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Nombre, Descripcion, Categoria, [Precio de Renta], Stock, Proveedor, Compañia FROM dbo.V_ARTICULOS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="Descripcion" DataSetColumn="Descripcion" />
+              <Mapping SourceColumn="Categoria" DataSetColumn="Categoria" />
+              <Mapping SourceColumn="Precio de Renta" DataSetColumn="Precio de Renta" />
+              <Mapping SourceColumn="Stock" DataSetColumn="Stock" />
+              <Mapping SourceColumn="Proveedor" DataSetColumn="Proveedor" />
+              <Mapping SourceColumn="Compañia" DataSetColumn="Compañia" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_PROVEEDORESTableAdapter" GeneratorDataComponentClassName="V_PROVEEDORESTableAdapter" Name="V_PROVEEDORES" UserDataComponentName="V_PROVEEDORESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MURKConnectionString1 (Settings)" DbObjectName="MURK.dbo.V_PROVEEDORES" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Nombre, Apellido, Correo, Telefono, Compañia, Direccion, Estado, Pais FROM dbo.V_PROVEEDORES</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="Apellido" DataSetColumn="Apellido" />
+              <Mapping SourceColumn="Correo" DataSetColumn="Correo" />
+              <Mapping SourceColumn="Telefono" DataSetColumn="Telefono" />
+              <Mapping SourceColumn="Compañia" DataSetColumn="Compañia" />
+              <Mapping SourceColumn="Direccion" DataSetColumn="Direccion" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
+              <Mapping SourceColumn="Pais" DataSetColumn="Pais" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_INVENTARIOTableAdapter" GeneratorDataComponentClassName="V_INVENTARIOTableAdapter" Name="V_INVENTARIO" UserDataComponentName="V_INVENTARIOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MURKConnectionString1 (Settings)" DbObjectName="MURK.dbo.V_INVENTARIO" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Rfid, Nombre, Descripcion, Categoria, Disponible FROM dbo.V_INVENTARIO</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Rfid" DataSetColumn="Rfid" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="Descripcion" DataSetColumn="Descripcion" />
+              <Mapping SourceColumn="Categoria" DataSetColumn="Categoria" />
+              <Mapping SourceColumn="Disponible" DataSetColumn="Disponible" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_USUARIOSTableAdapter" GeneratorDataComponentClassName="V_USUARIOSTableAdapter" Name="V_USUARIOS" UserDataComponentName="V_USUARIOSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MURKConnectionString1 (Settings)" DbObjectName="MURK.dbo.V_USUARIOS" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT RFID, Nombre, [Apellido Paterno], [Apellido Materno], [Tipo de Usuario], Telefono, Email FROM dbo.V_USUARIOS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RFID" DataSetColumn="RFID" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="Apellido Paterno" DataSetColumn="Apellido Paterno" />
+              <Mapping SourceColumn="Apellido Materno" DataSetColumn="Apellido Materno" />
+              <Mapping SourceColumn="Tipo de Usuario" DataSetColumn="Tipo de Usuario" />
+              <Mapping SourceColumn="Telefono" DataSetColumn="Telefono" />
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MURKDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MURKDataSet" msprop:Generator_UserDSName="MURKDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_ARTICULOS" msprop:Generator_TableClassName="V_ARTICULOSDataTable" msprop:Generator_TableVarName="tableV_ARTICULOS" msprop:Generator_RowChangedName="V_ARTICULOSRowChanged" msprop:Generator_TablePropName="V_ARTICULOS" msprop:Generator_RowDeletingName="V_ARTICULOSRowDeleting" msprop:Generator_RowChangingName="V_ARTICULOSRowChanging" msprop:Generator_RowEvHandlerName="V_ARTICULOSRowChangeEventHandler" msprop:Generator_RowDeletedName="V_ARTICULOSRowDeleted" msprop:Generator_RowClassName="V_ARTICULOSRow" msprop:Generator_UserTableName="V_ARTICULOS" msprop:Generator_RowEvArgName="V_ARTICULOSRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Categoria" msprop:Generator_ColumnVarNameInTable="columnCategoria" msprop:Generator_ColumnPropNameInRow="Categoria" msprop:Generator_ColumnPropNameInTable="CategoriaColumn" msprop:Generator_UserColumnName="Categoria">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Precio_x0020_de_x0020_Renta" msprop:Generator_ColumnVarNameInTable="columnPrecio_de_Renta" msprop:Generator_ColumnPropNameInRow="Precio_de_Renta" msprop:Generator_ColumnPropNameInTable="Precio_de_RentaColumn" msprop:Generator_UserColumnName="Precio de Renta" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Stock" msprop:Generator_ColumnVarNameInTable="columnStock" msprop:Generator_ColumnPropNameInRow="Stock" msprop:Generator_ColumnPropNameInTable="StockColumn" msprop:Generator_UserColumnName="Stock" type="xs:int" minOccurs="0" />
+              <xs:element name="Proveedor" msprop:Generator_ColumnVarNameInTable="columnProveedor" msprop:Generator_ColumnPropNameInRow="Proveedor" msprop:Generator_ColumnPropNameInTable="ProveedorColumn" msprop:Generator_UserColumnName="Proveedor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Compañia" msprop:Generator_ColumnVarNameInTable="columnCompañia" msprop:Generator_ColumnPropNameInRow="Compañia" msprop:Generator_ColumnPropNameInTable="CompañiaColumn" msprop:Generator_UserColumnName="Compañia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_PROVEEDORES" msprop:Generator_TableClassName="V_PROVEEDORESDataTable" msprop:Generator_TableVarName="tableV_PROVEEDORES" msprop:Generator_TablePropName="V_PROVEEDORES" msprop:Generator_RowDeletingName="V_PROVEEDORESRowDeleting" msprop:Generator_RowChangingName="V_PROVEEDORESRowChanging" msprop:Generator_RowEvHandlerName="V_PROVEEDORESRowChangeEventHandler" msprop:Generator_RowDeletedName="V_PROVEEDORESRowDeleted" msprop:Generator_UserTableName="V_PROVEEDORES" msprop:Generator_RowChangedName="V_PROVEEDORESRowChanged" msprop:Generator_RowEvArgName="V_PROVEEDORESRowChangeEvent" msprop:Generator_RowClassName="V_PROVEEDORESRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido" msprop:Generator_ColumnVarNameInTable="columnApellido" msprop:Generator_ColumnPropNameInRow="Apellido" msprop:Generator_ColumnPropNameInTable="ApellidoColumn" msprop:Generator_UserColumnName="Apellido" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Correo" msprop:Generator_ColumnVarNameInTable="columnCorreo" msprop:Generator_ColumnPropNameInRow="Correo" msprop:Generator_ColumnPropNameInTable="CorreoColumn" msprop:Generator_UserColumnName="Correo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefono" msprop:Generator_ColumnVarNameInTable="columnTelefono" msprop:Generator_ColumnPropNameInRow="Telefono" msprop:Generator_ColumnPropNameInTable="TelefonoColumn" msprop:Generator_UserColumnName="Telefono" type="xs:long" minOccurs="0" />
+              <xs:element name="Compañia" msprop:Generator_ColumnVarNameInTable="columnCompañia" msprop:Generator_ColumnPropNameInRow="Compañia" msprop:Generator_ColumnPropNameInTable="CompañiaColumn" msprop:Generator_UserColumnName="Compañia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Direccion" msprop:Generator_ColumnVarNameInTable="columnDireccion" msprop:Generator_ColumnPropNameInRow="Direccion" msprop:Generator_ColumnPropNameInTable="DireccionColumn" msprop:Generator_UserColumnName="Direccion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pais" msprop:Generator_ColumnVarNameInTable="columnPais" msprop:Generator_ColumnPropNameInRow="Pais" msprop:Generator_ColumnPropNameInTable="PaisColumn" msprop:Generator_UserColumnName="Pais" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_INVENTARIO" msprop:Generator_TableClassName="V_INVENTARIODataTable" msprop:Generator_TableVarName="tableV_INVENTARIO" msprop:Generator_RowChangedName="V_INVENTARIORowChanged" msprop:Generator_TablePropName="V_INVENTARIO" msprop:Generator_RowDeletingName="V_INVENTARIORowDeleting" msprop:Generator_RowChangingName="V_INVENTARIORowChanging" msprop:Generator_RowEvHandlerName="V_INVENTARIORowChangeEventHandler" msprop:Generator_RowDeletedName="V_INVENTARIORowDeleted" msprop:Generator_RowClassName="V_INVENTARIORow" msprop:Generator_UserTableName="V_INVENTARIO" msprop:Generator_RowEvArgName="V_INVENTARIORowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Rfid" msprop:Generator_ColumnVarNameInTable="columnRfid" msprop:Generator_ColumnPropNameInRow="Rfid" msprop:Generator_ColumnPropNameInTable="RfidColumn" msprop:Generator_UserColumnName="Rfid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Categoria" msprop:Generator_ColumnVarNameInTable="columnCategoria" msprop:Generator_ColumnPropNameInRow="Categoria" msprop:Generator_ColumnPropNameInTable="CategoriaColumn" msprop:Generator_UserColumnName="Categoria">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Disponible" msprop:Generator_ColumnVarNameInTable="columnDisponible" msprop:Generator_ColumnPropNameInRow="Disponible" msprop:Generator_ColumnPropNameInTable="DisponibleColumn" msprop:Generator_UserColumnName="Disponible" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_USUARIOS" msprop:Generator_TableClassName="V_USUARIOSDataTable" msprop:Generator_TableVarName="tableV_USUARIOS" msprop:Generator_TablePropName="V_USUARIOS" msprop:Generator_RowDeletingName="V_USUARIOSRowDeleting" msprop:Generator_RowChangingName="V_USUARIOSRowChanging" msprop:Generator_RowEvHandlerName="V_USUARIOSRowChangeEventHandler" msprop:Generator_RowDeletedName="V_USUARIOSRowDeleted" msprop:Generator_UserTableName="V_USUARIOS" msprop:Generator_RowChangedName="V_USUARIOSRowChanged" msprop:Generator_RowEvArgName="V_USUARIOSRowChangeEvent" msprop:Generator_RowClassName="V_USUARIOSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RFID" msprop:Generator_ColumnVarNameInTable="columnRFID" msprop:Generator_ColumnPropNameInRow="RFID" msprop:Generator_ColumnPropNameInTable="RFIDColumn" msprop:Generator_UserColumnName="RFID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido_x0020_Paterno" msprop:Generator_ColumnVarNameInTable="columnApellido_Paterno" msprop:Generator_ColumnPropNameInRow="Apellido_Paterno" msprop:Generator_ColumnPropNameInTable="Apellido_PaternoColumn" msprop:Generator_UserColumnName="Apellido Paterno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido_x0020_Materno" msprop:Generator_ColumnVarNameInTable="columnApellido_Materno" msprop:Generator_ColumnPropNameInRow="Apellido_Materno" msprop:Generator_ColumnPropNameInTable="Apellido_MaternoColumn" msprop:Generator_UserColumnName="Apellido Materno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tipo_x0020_de_x0020_Usuario" msprop:Generator_ColumnVarNameInTable="columnTipo_de_Usuario" msprop:Generator_ColumnPropNameInRow="Tipo_de_Usuario" msprop:Generator_ColumnPropNameInTable="Tipo_de_UsuarioColumn" msprop:Generator_UserColumnName="Tipo de Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefono" msprop:Generator_ColumnVarNameInTable="columnTelefono" msprop:Generator_ColumnPropNameInRow="Telefono" msprop:Generator_ColumnPropNameInTable="TelefonoColumn" msprop:Generator_UserColumnName="Telefono" type="xs:long" minOccurs="0" />
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_ARTICULOS" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="V_PROVEEDORES_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_PROVEEDORES" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="V_INVENTARIO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_INVENTARIO" />
+      <xs:field xpath="mstns:Rfid" />
+    </xs:unique>
+    <xs:unique name="V_USUARIOS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_USUARIOS" />
+      <xs:field xpath="mstns:RFID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
